@@ -46,7 +46,7 @@ git has to be installed and configured (user.name and user.email set in the
             $CONDADIR/bin/conda install conda-build
             sudo groupadd condausers
             sudo usermod -aG condausers $USER
-            sudo chown -R :condausers $CONDADIR
+            sudo chown -R root:condausers $CONDADIR
             sudo chmod -R 775 $CONDADIR
 
 
