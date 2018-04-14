@@ -72,7 +72,15 @@
 
 ---
 
-[![Example](https://asciinema.org/a/172085.png)](https://asciinema.org/a/172085)
+## Example: pproject create
+
+[![Example](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH.png)](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH)
+
+---
+
+## Example: pproject test/version
+
+[![Example](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec.png)](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec)
 
 ---
 
