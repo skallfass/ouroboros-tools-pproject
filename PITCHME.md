@@ -52,6 +52,11 @@
 
 ---
 
+### Workflow
+<img src="https://www.pproject.ouroboros.info/_images/pproject_workflow_new.svg" alt="Workflow" width="50%" height="50%">
+
+---
+
 ## Resultierende Projektstruktur
 ```
 ├── conda-build
@@ -69,23 +74,6 @@
 ├── setup.py
 └── tests
 ```
-
----
-
-## Example: pproject create
-
-[![Example](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH.png)](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH)
-
----
-
-## Example: pproject test/version
-
-[![Example](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec.png)](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec)
-
----
-
-### Development-Circle
-<img src="https://pproject.ouroboros.info/_images/development_circle.svg" alt="Development-Circle" width="50%" height="50%">
 
 ---
 
@@ -128,6 +116,18 @@ Erstellen der Sphinx-Dokumentation:
 ```bash
 pproject sphinx
 ```
+
+---
+
+## Example: pproject create
+
+[![Example](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH.png)](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH)
+
+---
+
+## Example: pproject test/version
+
+[![Example](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec.png)](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec)
 
 ---
 
