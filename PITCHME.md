@@ -26,7 +26,6 @@
 [www.pproject.ouroboros.info](https://www.pproject.ouroboros.info)
 
 ---
-
 ## Warum pproject?
 * Vereinfachung von
     * Entwicklung in Conda-Environments
@@ -40,7 +39,6 @@
 * als Playground für Packages & Technologien
 
 ---
-
 ## Features
 * Shell-tool (bash und zsh)
 * Projekterstellung (lokal / remote)
@@ -51,12 +49,10 @@
 * Sphinx
 
 ---
-
 ### Workflow
 <img src="https://www.pproject.ouroboros.info/_images/pproject_workflow_new.svg" alt="Workflow" width="65%" height="65%">
 
 ---
-
 ## Resultierende Projektstruktur
 ```
 ├── conda-build
@@ -76,71 +72,80 @@
 ```
 
 ---
-
-## Erstellen und Entwickeln
-Erstellen:
+## autoenv und autoupdate
+autoenv aktivieren
 ```bash
-pproject create --remote tools example -p 3.6
+pproject autoenv_toggle
 ```
-Update des Conda-Envs:
+autoupdate aktivieren
+```bash
+pproject autoupdate_toggle
+```
+auto-commands ausführen
+```bash
+pproject autoenv
+```
+
+---
+## Erstellen und Entwickeln
+Projekt erstellen
+```bash
+pproject create [--remote] NAMESPACE -n PROJECT [-p {2.7, 3.6}]
+```
+Update des Conda-Environment
 ```bash
 pproject update
 ```
-Testen:
+Testen
 ```bash
 pproject test
 ```
 
 ---
-## Status und Build
-Überblick:
+## Info und Build
+Überblick
 ```bash
 pproject info {project, general}
 ```
-Neuer Versionstag:
+Neuer Versionstag
 ```bash
 pproject version -m "MESSAGE" {major, minor, patch}
 ```
-Conda-Package erstellen:
+Conda-Package erstellen
 ```bash
 pproject build [--publish]
 ```
 
 ---
 ## Ausrollen und Dokumentation
-Ausrollen auf Host:
+Ausrollen auf Host
 ```bash
-pproject release -d USER@HOST -e ENVIRONMENT_NAME
+pproject release -d USER@HOST [-e ENVIRONMENT_NAME]
 ```
-Erstellen der Sphinx-Dokumentation:
+Erstellen der Sphinx-Dokumentation
 ```bash
 pproject sphinx
 ```
 
 ---
-
 ## Example: pproject create
 
 [![Example](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH.png)](https://asciinema.org/a/6IOIgrb6mFjNPKggsAHEbQRNH)
 
 ---
-
 ## Example: pproject test/version
 
 [![Example](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec.png)](https://asciinema.org/a/ZLFmODNFCwMNCfqo1QHGapjec)
 
 ---
-
-## Ausblick
+## Roadmap
+* flexiblere Namespaces (Plugin-System?)
+* CI-Skeletons
+* Neuer Befehl: "containerize/dockerize/..."
 * eventuell Bitbucket-support
 * fish-support
-* flexiblere Namespaces
-* Plugin-System?
-* Neuer Befehl: "containerize/dockerize/..."
-* CI-Skeletons?
 
 ---
-
 ## Contributors welcome!
 <table style="text-align: left; font-size: 18px">
     <tr>
