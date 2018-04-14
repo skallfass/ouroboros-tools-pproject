@@ -53,7 +53,7 @@
 ---
 
 ### Workflow
-<img src="https://www.pproject.ouroboros.info/_images/pproject_workflow_new.svg" alt="Workflow" width="50%" height="50%">
+<img src="https://www.pproject.ouroboros.info/_images/pproject_workflow_new.svg" alt="Workflow" width="65%" height="65%">
 
 ---
 
