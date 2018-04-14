@@ -1,0 +1,6 @@
+theme : night
+layout: center
+logo: https://pproject.ouroboros.info/_images/pproject.svg
+logo-position: bottom-left
+highlight: solarized-dark
+theme-override : PITCHME.css
