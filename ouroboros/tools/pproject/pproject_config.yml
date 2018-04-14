@@ -1,0 +1,89 @@
+# conda-settings
+# =============================================================================
+# defines where conda is installed
+conda_folder: '/var/local/conda'
+
+# project-settings
+# =============================================================================
+meta_yaml_path: 'conda-build/meta.yaml'
+meta_yaml_md5_path: 'conda-build/hash.md5'
+
+# defines where the ocp-environment is installed
+pproject_env: '/var/local/conda/envs/pproject'
+
+# defines where to get the project-skeleton used for new project, from
+skeleton_repo: 'git@gitlab.com:skallfass-ouroboros/skeleton.git'
+
+# the company to use for new projects. Also used to combine the
+# gitlab-groups as "company-namespace".
+company: 'example'
+
+# vcs-settings
+# =============================================================================
+# defines which remote-git-vcs to use and how to connect to this remote.
+vcs:
+    # available are:
+    #     'gitlab'
+    #     'github'
+    use: 'github'
+
+    gitlab:
+        url: 'https://gitlab.com'
+        api: 'https://gitlab.com/api/v4'
+        # The path where your access-token is stored.
+        # Required to interact with remote vcs out of pproject.
+        token_path: '~/.config/pproject/.gitlab.token'
+        ssh: 'git@gitlab.com'
+        use_groups: true
+        # namespaces available for project creation if no connection to vcs
+        offline_namespaces:
+            - 'testing'
+            - 'products'
+            - 'modules'
+            - 'services'
+
+    github:
+        url: 'https://api.github.com'
+        api: 'https://api.github.com/user/repos'
+        # The path where your access-token is stored.
+        #         # Required to interact with remote vcs out of pproject.
+        token_path: '~/.config/pproject/.github.token'
+        ssh: 'ssh://git@github.com'
+        use_groups: false
+        # namespaces available for project creation if no connection to vcs
+        offline_namespaces:
+            - 'testing'
+            - 'products'
+            - 'modules'
+            - 'services'
+
+
+# conda repository settings
+# =============================================================================
+# To allow other users inside your network you should have set up an own
+# conda-repository-server. To allow pproject to publish conda-packages
+# built with pproject at this repository, the following settings are
+# required.
+conda_respository_server:
+    # The connection to your conda-repository-server.
+    user: 'user'
+    host: 'hostname'
+    # The path on your conda-repository-server where the conda-packages are
+    # stored.
+    packages_path: '/var/repopath'
+    # The path to the conda-executable on the conda-repository-server.
+    # Required to update the repository index with "conda index PATH"
+    # after publishing of new packages.
+    conda_exe: '/var/local/conda/bin/conda'
+
+
+# pytest settings
+# =============================================================================
+# As default pytest inside pproject is configured to use the arguments as
+# defined here. If you don't change this parameters by placing it inside
+# your user-config, pytest uses the arguments "--cache-clear" and "-q" if
+# run from the pproject-tool. If you need more details like "-vv" or "-s",
+# place these arguments here.
+pytest_arguments:
+    - '--cache-clear'
+    - '-q'

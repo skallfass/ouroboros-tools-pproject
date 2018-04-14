@@ -1,0 +1,18 @@
+{% extends "!layout.html" %}
+
+{# Custom CSS overrides #}
+{% set css_files = css_files + ['_static/my-styles.css'] %}
+
+
+{% block footer %}
+<div class="container">
+ <hr>
+<p>© Copyright 2018, Simon Kallfass.</p>
+<a href="https://www.ouroboros.info/impressum.html">Impressum</a>
+<p>
+    This site was generated using
+    <a href="http://www.sphinx-doc.org/en/master/index.html">Sphinx</a>
+    and the <a href="https://github.com/ryan-roemer/sphinx-bootstrap-theme">Sphinx-Bootstrap-Theme</a>
+</p>
+</div>
+{% endblock %}

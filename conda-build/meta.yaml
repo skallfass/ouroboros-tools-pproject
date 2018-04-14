@@ -1,0 +1,61 @@
+{% set data = load_setup_py_data() %}
+
+package:
+    name: "ouroboros-tools-pproject"
+    version: {{ data.get("version") }}
+
+source:
+    path: ..
+
+build:
+    build: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
+    preserve_egg_dir: True
+    entry_points:
+      - pproject_py = ouroboros.tools.pproject.pproject:main
+      - pproject_read_config = ouroboros.tools.pproject.utils:get_config_for_terminal
+
+requirements:
+    build:
+      - python 3.6.3
+      - setuptools
+    run:
+      - python 3.6.3
+      - attrs >=17.4*
+      - cookiecutter >=1.5*
+      - ipython
+      - jinja2
+      - marshmallow
+      - paramiko >=2.4*
+      - pylint >=1.8.2*
+      - pytest 3.3.1
+      - pytest-cov >=2.5*
+      - pytest-lazy-fixture >=0.4*
+      - pytest-xdist >=1.22*
+      - pyyaml
+      - ruamel.yaml
+      - sphinx >=1.7*
+      - toastedmarshmallow
+      - coverage >=4.5*
+      - coverage-badge
+      - sphinx_rtd_theme
+      - sphinx_bootstrap_theme
+
+test:
+    imports:
+        - ouroboros.tools.pproject.pproject
+        - ouroboros.tools.pproject.utils
+        - ouroboros.tools.pproject.validators
+        - ouroboros.tools.pproject.conda
+        - ouroboros.tools.pproject.git
+        - ouroboros.tools.pproject.inform
+    commands:
+        - pproject_py --help
+        - pproject_read_config
+
+about:
+    license: MIT
+    license_file: LICENSE
+
+extra:
+    maintainer: Simon Kallfass
+    pythonversion: 3.6

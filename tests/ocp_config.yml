@@ -1,0 +1,22 @@
+# defines where conda is installed
+conda_folder: '/var/local/conda'
+
+# project-settings
+meta_yaml_path: 'conda-build/meta.yaml'
+meta_yaml_md5_path: 'conda-build/hash.md5'
+environment_yaml_path: 'conda-build/environment.yml'
+
+# defines where the ocp-environment is installed
+ocp_env: '/var/local/conda/envs/ocp'
+
+skeleton_repo: 'git@gitlab.com:skallfass/skeleton.git'
+default_company: 'ouroboros'
+gitlab_url: 'https://gitlab.com'
+gitlab_groups:
+    ouroboros-operations: 2299236
+    ouroboros-modules: 2299229
+    ouroboros-services: 2299232
+    ouroboros-products: 2299230
+gitlab_api: 'https://gitlab.com/api/v4'
+gitlab_token: '6RMQxCEJyaRsceS15swE'
+gitlab_ssh: 'git@gitlab.com'

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="162.45178mm"
+   height="153.56934mm"
+   viewBox="0 0 162.45178 153.56933"
+   version="1.1"
+   id="svg4621"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="development_circle.svg">
+  <defs
+     id="defs4615" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="360.56262"
+     inkscape:cy="317.73061"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1596"
+     inkscape:window-height="857"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata4618">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-42.376164,-24.757635)" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.638693,-14.690776)">
+    <ellipse
+       ry="29.067755"
+       rx="33.981445"
+       cy="72.482147"
+       cx="58.586311"
+       id="ellipse4682-61-9"
+       style="opacity:1;fill:#9bd4e3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37282246;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    <text
+       id="text4686-8-4"
+       y="78.378571"
+       x="27.592262"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         y="78.378571"
+         x="27.592262"
+         id="tspan4684-7-78"
+         sodipodi:role="line">Document</tspan></text>
+    <ellipse
+       ry="29.067755"
+       rx="33.981445"
+       cy="116.70536"
+       cx="54.806549"
+       id="ellipse4682-61-1"
+       style="opacity:1;fill:#6cc0d6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37282246;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    <text
+       id="text4686-8-2"
+       y="120.48512"
+       x="32.127975"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.26458332;stroke-opacity:1;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332;fill:#ffffff;stroke:#000001;stroke-opacity:1;"
+         y="120.48512"
+         x="32.127975"
+         id="tspan4684-7-93"
+         sodipodi:role="line">Release</tspan></text>
+    <ellipse
+       ry="29.067755"
+       rx="33.981445"
+       cy="139.00595"
+       cx="103.1875"
+       id="ellipse4682-61-28"
+       style="opacity:1;fill:#3cacca;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37282246;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    <text
+       id="text4686-8-9"
+       y="143.91963"
+       x="86.934525"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.26458332;stroke-opacity:1;opacity:1;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332;fill:#ffffff;stroke:#000001;stroke-opacity:1;"
+         y="143.91963"
+         x="86.934525"
+         id="tspan4684-7-7"
+         sodipodi:role="line">Build</tspan></text>
+    <ellipse
+       ry="29.067755"
+       rx="33.981445"
+       cy="112.54762"
+       cx="148.92262"
+       id="ellipse4682-61-7"
+       style="opacity:1;fill:#2c879e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37282246;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    <text
+       id="text4686-8-5"
+       y="115.94939"
+       x="137.58334"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.26458332;stroke-opacity:1;opacity:1;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332;fill:#ffffff;stroke:#000001;stroke-opacity:1;"
+         y="115.94939"
+         x="137.58334"
+         id="tspan4684-7-9"
+         sodipodi:role="line">Test</tspan></text>
+    <ellipse
+       ry="29.067755"
+       rx="33.981445"
+       cy="68.702385"
+       cx="142.49702"
+       id="ellipse4682-61-2"
+       style="opacity:1;fill:#1672ac;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37282246;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    <text
+       id="text4686-8-0"
+       y="74.220833"
+       x="120.19643"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.26458332;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:#000001;stroke-width:0.26458332;stroke-opacity:1"
+         y="74.220833"
+         x="120.19643"
+         id="tspan4684-7-2"
+         sodipodi:role="line">Develop</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4836"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion4838"><rect
+           id="rect4840"
+           width="894.28571"
+           height="542.85712"
+           x="-75.714287"
+           y="36.805397" /></flowRegion><flowPara
+         id="flowPara4842" /></flowRoot>    <ellipse
+       ry="29.067755"
+       rx="33.981445"
+       cy="43.944942"
+       cx="100.73066"
+       id="ellipse4682-61"
+       style="opacity:1;fill:#165a7c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37282246;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    <text
+       id="text4686-8"
+       y="46.968746"
+       x="79.563988"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.26458332;stroke-opacity:1;opacity:1;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332;fill:#ffffff;stroke:#000001;stroke-opacity:1;"
+         y="46.968746"
+         x="79.563988"
+         id="tspan4684-7"
+         sodipodi:role="line">Create</tspan></text>
+  </g>
+</svg>
