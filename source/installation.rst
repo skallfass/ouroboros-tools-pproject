@@ -44,7 +44,6 @@ git has to be installed and configured (user.name and user.email set in the
             /bin/bash /tmp/miniconda.sh -f -b -p $CONDADIR
             rm /tmp/miniconda.sh
             $CONDADIR/bin/conda install conda-build
-            rm -r $CONDADIR/pkgs/*
             sudo groupadd condausers
             sudo usermod -aG condausers $USER
             sudo chown -R :condausers $CONDADIR
