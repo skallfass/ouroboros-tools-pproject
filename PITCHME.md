@@ -59,9 +59,9 @@
 │       ├── meta.yaml
 │       └── hash.md5
 ├── company
-│       ├── init__.py
+│       ├── __init__.py
 │       └── namespace
-│           ├── init__.py
+│           ├── __init__.py
 │           └── project
 │               ├── your_code.py
 │               └── __init__.py
