@@ -641,7 +641,7 @@ def build_arguments(args):
     """
     # TODO: make dynamic with CONFIG['use_vcs']
     try:
-        assert all([_ in (list(string.ascii_letters) + ['_'])
+        assert all([_ in (list(string.ascii_letters + string.digits) + ['_'])
                     for _ in list(CONFIG['company'])])
     except AssertionError:
         inform.error('Your company-name contains unsupported chars (only letters and "_" are allowed)')
