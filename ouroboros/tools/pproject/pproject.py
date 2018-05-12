@@ -13,6 +13,7 @@ import datetime as dt
 import logging
 import os
 from pathlib import Path
+import string
 import sys
 from subprocess import CalledProcessError
 from pkg_resources import get_distribution
@@ -638,7 +639,6 @@ def build_arguments(args):
     -------
     parsed_args: argparse.Namespace
     """
-    # TODO: make dynamic with CONFIG['use_vcs']
     vcs = CONFIG['vcs']['use']
     if vcs == 'gitlab' and VCS_SETTINGS['use_groups']:
         try:
@@ -663,7 +663,6 @@ def build_arguments(args):
     create.add_argument('-r', '--remote', action='store_true', default=False)
     namespaces = create.add_subparsers(
         description='the following namespaces are supported')
-    #for namespace_name in ('services', 'products', 'modules', 'operations'):
     for namespace_name in available_namespaces:
         namespace = namespaces.add_parser(
             namespace_name,
@@ -784,6 +783,13 @@ def main():
     All other operations are done by :class:`conda.MetaYaml` and
     :class:`Project` and their methods.
     """
+    try:
+        assert all([_ in (list(string.ascii_letters + string.digits) + ['_'])
+                    for _ in list(CONFIG['company'])])
+    except AssertionError:
+        inform.error('Your company-name contains unsupported chars '
+                     '(only letters and "_" are allowed)')
+        inform.critical()
     options = build_arguments(sys.argv[1:])
     run(options)
     sys.exit(0)
