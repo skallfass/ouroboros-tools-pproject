@@ -639,6 +639,13 @@ def build_arguments(args):
     -------
     parsed_args: argparse.Namespace
     """
+    # TODO: make dynamic with CONFIG['use_vcs']
+    try:
+        assert all([_ in (list(string.ascii_letters) + ['_'])
+                    for _ in list(CONFIG['company'])])
+    except AssertionError:
+        inform.error('Your company-name contains unsupported chars (only letters and "_" are allowed)')
+        inform.critical()
     vcs = CONFIG['vcs']['use']
     if vcs == 'gitlab' and VCS_SETTINGS['use_groups']:
         try:
@@ -663,6 +670,7 @@ def build_arguments(args):
     create.add_argument('-r', '--remote', action='store_true', default=False)
     namespaces = create.add_subparsers(
         description='the following namespaces are supported')
+    #for namespace_name in ('services', 'products', 'modules', 'operations'):
     for namespace_name in available_namespaces:
         namespace = namespaces.add_parser(
             namespace_name,
@@ -776,6 +784,7 @@ def run(options, path=Path.cwd()):
 def main():
     """
     The main function coordinating the python-part of the pproject-tool.
+    Creates default-config inside ~/.config/pproject if it doesn't exist.
 
     Note
     ----
@@ -783,13 +792,12 @@ def main():
     All other operations are done by :class:`conda.MetaYaml` and
     :class:`Project` and their methods.
     """
-    try:
-        assert all([_ in (list(string.ascii_letters + string.digits) + ['_'])
-                    for _ in list(CONFIG['company'])])
-    except AssertionError:
-        inform.error('Your company-name contains unsupported chars '
-                     '(only letters and "_" are allowed)')
-        inform.critical()
+    userconfig = Path.home() / '.config/pproject/pproject_config.yml'
+    if not userconfig.parent.exists():
+        userconfig.parent.mkdir(parents=True)
+        defaultconfig = Path(__file__).with_name('pproject_config.yml')
+        with defaultconfig.open('rb') as dconfig:
+            userconfig.write_bytes(dconfig.read())
     options = build_arguments(sys.argv[1:])
     run(options)
     sys.exit(0)
