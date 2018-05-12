@@ -118,7 +118,7 @@ def run_in_bash(command):
     """
     result = check_output([f'/bin/bash -c "{command}"'],
                           shell=True,
-                          stderr=subprocess.STDOUT).strip().decode('ascii')
+                          stderr=subprocess.STDOUT).strip().decode('utf-8')
     return result
 
 
