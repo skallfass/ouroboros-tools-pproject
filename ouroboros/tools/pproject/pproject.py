@@ -349,7 +349,7 @@ class Project:
                     pythonversion=self.pythonversion)
                 bld_path = Path(CONFIG['conda_folder']) / 'conda-bld/linux-64'
                 pkg_path = str(bld_path / pkg_file)
-                inform.info(f'Built package is {localfilepath}')
+                inform.info(f'Built package is {pkg_path}')
                 if publish:
                     conda.publish_package_on_reposerver(pkg_path)
                 inform.finished()
